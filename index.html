@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootsrap Kullanalim-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JS ile Api Cagirma</title>
+</head>
+<body>
+
+    <div class="container text-center container-lg" id="Baslik">
+ 
+       <div class="row">
+            <div class="col" >
+
+                <h1>JS ile Api Cagirma</h1>
+                
+            </div>
+       </div> 
+
+        <div class="row">
+
+                <div class="col-lg-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                          Fake API Sunucusundan, Api Kullanmak
+                          <a href="https://jsonplaceholder.typicode.com/">
+                            jsonplaceholder
+                          </a>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-lg-2">
+                    <div>Örnek Kayıt Getir</div>
+                    <input type="text" id="otxtId" value="9" class="btn btn-primary m-2"/>
+                    <button id="btnGetir" type="button" class="btn btn-primary " onclick="jGetir()">Getir</button>
+                </div>
+
+                <div class="col-lg-6 m-0">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                          Mesaj Id : <span id="spnBaslik"></span>
+                          
+                        </div>
+
+                        <div class="card-content">
+                            <span id="spnIcerik"></span>
+                        </div>
+                        
+                      </div>
+                </div>                
+
+        </div>  
+     </div>
+    
+</body>
+<script src="jsapidemo.js"></script>
+</html>
